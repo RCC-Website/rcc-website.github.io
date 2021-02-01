@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Our Members</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"></a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="memberslist.php">Members</a>
+						<a href="aboutus.html">About Us</a>
+						<a href="joinus.html">Join Us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Join Rellis/Tamuc!</h2>
+					</header>
+					<body>
+						<form action="insertmem.php" method="POST">
+							<label>Name: </labeL> <input type = "text" name = "name" placeholder="First & Last Name"><br>
+							<label>Email: </label> <input type = "email" name = "email" placeholder="Smith@gmail.com"><br>
+							<label>Major: </label> <input type = "text" name = "major" placeholder="e.g. CSCI"><br>
+							<label>Student Classification: </label> <input type = "text" name = "class" placeholder="Senior"><br>
+				
+							<input type=submit value="Submit">
+						</form>
+
+						<header class="align-center">
+							<h2>Interested in being a Supervisor?</h2>
+						</header>
+						<form action="insertsuper.php" method="POST">
+							<label>Name: </labeL> <input type = "text" name = "name" placeholder="First & Last Name"><br>
+							<label>Email: </label> <input type = "email" name = "email" placeholder="Smith@gmail.com"><br>	
+							<input type=submit value="Submit">
+						</form>
+
+						<header class="align-center">
+							<h2>Update Member</h2>
+						</header>
+						<form action="updatemem.php" method="POST">
+							<label>ID: </labeL> <input type = "text" name = "ID" placeholder="ID #"><br>
+							<label>Name: </labeL> <input type = "text" name = "name" placeholder="First & Last Name"><br>
+							<label>Email: </label> <input type = "email" name = "email" placeholder="Smith@gmail.com"><br>
+							<label>Major: </label> <input type = "text" name = "major" placeholder="e.g. CSCI"><br>
+							<label>Student Classification: </label> <input type = "text" name = "class" placeholder="Senior"><br>
+							<input type=submit value="Submit">
+						</form>
+
+						<header class="align-center">
+							<h2>Update Supervisor</h2>
+						</header>
+						<form action="updatesuper.php" method="POST">
+							<label>ID: </labeL> <input type = "text" name = "ID" placeholder="ID #"><br>
+							<label>Name: </labeL> <input type = "text" name = "name" placeholder="First & Last Name"><br>
+							<label>Email: </label> <input type = "email" name = "email" placeholder="Smith@gmail.com"><br>
+							<input type=submit value="Submit">
+						</form>
+
+						<header class="align-center">
+							<h2>Delete Member</h2>
+						</header>
+							<form action="deletemem.php" method="POST">
+								<label>Delete which student? </labeL> <input type = "text" name = "ID" placeholder="ID #"><br>
+							<input type=submit value="Submit">
+						</form>
+
+						<header class="align-center">
+							<h2>Delete Supervisor</h2>
+						</header>
+						<form action="deletesuper.php" method="POST">
+								<label>Delete which supervisor? </labeL> <input type = "text" name = "ID" placeholder="ID #"><br>
+							<input type=submit value="Submit">
+						</form>
+					</body>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
